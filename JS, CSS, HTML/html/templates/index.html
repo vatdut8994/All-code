@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Welcome to Vatsal Dhaba</h1>
+</head>
+<body>
+    <form action='/result' method="POST">
+        <label for='Curry'>Select Curry: </label>
+        <select name="Select Curry" id="Curry">
+            <option value=0></option>
+            <option value=200>Shahi Paneer - 200</option>
+            <option value=100>Dal - 100</option>
+            <option value=80>Aloo - 80</option>
+        </select><br><br>
+        <input type="submit" name='buttons' value="Select curry"><br><br>
+        <label for='Chapati'>Select Your Chapatis: </label>
+        <select name="Chapati" id="Chapati">
+            <option value=0></option>
+            <option value=10>Roti - 10</option>
+            <option value=20>Paratha - 20</option>
+            <option value=40>Naan - 40</option>
+        </select><br><br>
+        <input type='submit' name='buttons' value='Select Chapati'><br><br>
+        <label for='Water'>Mineral Water: </label>
+        <input type='radio' id='Normal' name='Water' value='0'>
+        <label for='Normal'>Normal - Free</label>
+        <input type='radio' id='Package' name='Water' value='30'>
+        <label for='Package'>Package - 30</label><br><br>
+        <!-- <img src="{{ url_for('static', filename='images/pic1.png')}}" width='400'></a><br><br> -->
+        <input type='image' src="{{ url_for('static', filename='images/pic1.png')}}" width='25' height="25" name='buttons' value='Select curry'>
+        {{Total}}
+</form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href = "style.css" rel = "stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <center>
+    <h1 id="heading1">Hello World!</h1>
+    <h4>Who is the user?</h4>
+    <div class="all-the-buttons">
+            <div>    
+                <button type="button" onclick="Greet('Manoj');detailManoj();">I am Manoj</button>
+            </div>
+            <div>
+            <button type="button" onclick="Greet('Geeta');detailGeeta();">I am Geeta</button>
+            </div>
+            <div>
+            <button type="button" onclick="Greet('Bhumika');detailBhumika();">I am Bhumika</button>
+            </div>
+            <div>
+            <button type="button" onclick="Greet('Vatsal');detailVatsal();">I am Vatsal</button>
+    </div></div>
+
+    <div id = "User"></div>
+    <div id = "datetime">
+        <button type="button" onclick="dateTime();">Date and Time</button>
+    </div>
+            <div id="flex-box-results"></div>
+    <p id="paragraph1">If you want to add any thing, you can to this paragraph</p>
+    <form name = "changeform">
+        <input type="text" name="newtitle" size = "65"/>
+        <button id = "chan" type="button" onclick="changeTitle();">Change</button>
+    </form>
+    <div id = "btn">
+        <button type="button" onclick="linkGen();">Link generator</button>
+        <a id="myAnchor" target="_blank" href="http://www.google.com">Google search Link</a>
+        <button type="button" onclick="URLGen();">Link generator</button>
+        <a id="someSome" target="_blank" href="http://www.apple.com">URL search Link</a>
+    </div>
+    <h2>Calculator</h2>
+    <button id = "cal" type="button" onclick="ccalculator();">Basic Calculator</button>
+    <div id="r"></div>
+</center>
+
+    <div class = "calculator-grid">
+        <div class = "output">
+            <div data-previous-operand class = "previous-operand"></div>
+            <div data-current-operand class = "current-operand"></div>
+        </div>
+        <button data-all-clear class = "g">AC</button>
+        <button data-delete class = "g">DEL</button>
+        <button data-percent class = "g">%</button>
+        <button data-operation class = "g">÷</button>
+        <button data-number class = "g">1</button>
+        <button data-number class = "g">2</button>
+        <button data-number class = "g">3</button>
+        <button data-operation class = "g">×</button>
+        <button data-number class = "g">4</button>
+        <button data-number class = "g">5</button>
+        <button data-number class = "g">6</button>
+        <button data-operation class = "g">+</button>
+        <button data-number class = "g">7</button>
+        <button data-number class = "g">8</button>
+        <button data-number class = "g">9</button>
+        <button data-operation class = "g">-</button>
+        <button data-number class = "g">.</button>
+        <button data-number class = "g">0</button>
+        <button data-revert class = "g">-/+</button>
+        <button data-equals class = "g">=</button>
+    </div>
+    <iframe src="https://onedrive.live.com/embed?cid=7A9EE09305C5C585&resid=7A9EE09305C5C585%2111891&authkey=AEcrwR2P2Cz5ov8" width="98" height="120" frameborder="0" scrolling="no"></iframe>
+
+</body>
+</html>
